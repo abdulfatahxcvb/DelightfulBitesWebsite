@@ -1,0 +1,221 @@
+/* Global Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  line-height: 1.6;
+  background-color: #f8f9fa; /* Light background for the body */
+}
+
+/* Transparent Navbar */
+.header {
+  position: absolute; /* To overlay over the hero section */
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10; /* Ensures navbar is above the hero section */
+  background: rgba(255, 255, 255, 0.7); /* Semi-transparent background for navbar */
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  position: relative;
+  z-index: 1; /* Keep content above the background */
+}
+
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  max-width: 50px;
+}
+
+.brand-name {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
+  font-style: italic;
+  color: #333; /* Darker color for text for better readability */
+  margin-left: 10px;
+}
+
+.nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.nav ul li {
+  margin: 0 15px;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: #333; /* Dark text color */
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.nav ul li a:hover {
+  color: #e76f51; /* Same color as button hover */
+}
+
+/* Menu Section */
+.menu {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.menu h2 {
+  font-size: 3rem;
+  color: #2a9d8f;
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+
+.menu p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  color: #555;
+}
+
+.menu-category {
+  margin-bottom: 60px;
+  text-align: left;
+}
+
+.menu-category h3 {
+  font-size: 2.5rem;
+  color: #264653;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+.menu-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-item {
+  background: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+}
+
+.menu-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.menu-item img {
+  max-width: 100px;
+  height: auto;
+  border-radius: 5px;
+  margin-right: 10px; /* Reduced from 20px to 10px */
+}
+
+.menu-item .item-info {
+  flex: 1;
+}
+
+.menu-item h4 {
+  font-size: 1.8rem;
+  color: #e76f51;
+  margin-bottom: 10px;
+  font-weight: 600;
+  margin-top: 0; /* Ensures no additional spacing above the heading */
+}
+
+.menu-item p {
+  color: #555;
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+
+.menu-item .price {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #e76f51;
+  margin-top: 10px;
+}
+
+.menu-item:last-child {
+  margin-bottom: 40px; /* Adds more space after the last item */
+}
+.contact {
+  padding: 50px 20px;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+.contact-form input, .contact-form textarea {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.contact-form button {
+  align-self: flex-end;
+  background: #f08a5d;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contact-form button:hover {
+  background: #b83b5e;
+}
+   /* Add some styles for the map container */
+   #map {
+    height: 400px;
+    width: 100%;
+    margin-top: 20px;
+}
+/* About Section */
+.about {
+  padding: 50px 20px;
+  background: #f7f7f7;
+  text-align: center;
+}
+
+/* Footer Section */
+.footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 20px;
+  margin-top: 40px;
+}
+
+

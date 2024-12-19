@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delightful Bites</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhE_I_3OBixObfLVBULBHtT_NpEyJmlgk&callback=initMap" async defer></script>
+
+</head>
+<body>
+
+<!-- Header Section -->
+<header class="header">
+    <div class="header-content">
+        <!-- Wrapper for Logo and Brand Name -->
+        <div class="logo-wrapper">
+            <img src="images/bite1.png" alt="Delightful Bites Logo" class="logo">
+            <span class="brand-name">Delightful Bites</span>
+        </div>
+        <div class="menu"><a href="main.html" >Home</a>
+              <a href="product.html">Products</a>
+              <a href="#about">About</a>
+              <a href="#contact">Contact</a>
+              </div>
+    </div>
+  </header>
+
+<!-- Hero Section -->
+<section id="hero" class="hero">
+  <div class="hero-overlay">
+      <h1>Delightful Bites</h1>
+      <p>Indulge in the finest handcrafted pastries, made fresh daily.</p>
+      <a href="menu.html" class="btn">Explore Our Menu</a>
+  </div>
+</section>
+
+<!-- Products Section -->
+<section id="products" class="products">
+    <h2>Our Bestsellers</h2>
+    <div class="product-grid">
+        <div class="product">
+            <img src="images/ccake.png" alt="Chocolate Cake">
+            <h3>Chocolate Cake</h3>
+            <p>Rich and decadent, perfect for any occasion. <strong>$25.00</strong></p>
+        </div>
+        <div class="product">
+            <img src="images/cupcake.png" alt="Cupcakes">
+            <h3>Assorted Cupcakes</h3>
+            <p>Fluffy and delightful with various flavors. <strong>$15.00</strong></p>
+        </div>
+        <div class="product">
+            <img src="images/tart.png" alt="Fruit Tart">
+            <h3>Fruit Tart</h3>
+            <p>Fresh and vibrant with seasonal fruits. <strong>$12.00</strong></p>
+        </div>
+    </div>
+</section>
+
+<!-- Custom Orders Section -->
+<section id="custom-orders" class="custom-orders">
+    <h2>Custom Orders</h2>
+    <p>We'd love to create something special for you! To place a custom order, please fill out the form below or download our custom order form and send it to us.</p>
+
+    <!-- Downloadable Form -->
+    <a href="Custom Order.docx" download class="btn">Download Custom Order Form</a>
+
+    <p>If you have any specific questions or requests, feel free to contact us:</p>
+    <p><strong>Email:</strong> <a href="mailto:email@example.com">abdulfatahmaalik@gmail.com</a></p>
+    <p><strong>Phone:</strong> <a href="tel:+123456789">0508621727</a></p>
+
+    <!-- Contact Form -->
+    <h3>Or submit your request online:</h3>
+    <form action="mailto:email@example.com" method="post" enctype="text/plain">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Order Details:</label>
+        <textarea id="message" name="message" placeholder="Describe your custom order request" required></textarea>
+
+        <button type="submit" class="btn">Submit Order</button>
+    </form>
+</section>
+
+
+
+<!-- Gallery Section -->
+<section id="gallery" class="gallery">
+    <h2>Our Creations</h2>
+    <div class="gallery-grid">
+        <img src="images/croissant.png" alt="Gallery Image 1">
+        <img src="images/tart (1).png" alt="Gallery Image 2">
+        <img src="images/vanila cake.png" alt="Gallery Image 3">
+    </div>
+</section>
+<!-- Promotions and Announcements Section -->
+<section id="promotions" class="promotions">
+    <div class="promotion-banner">
+        <h2>Special Offer: 20% Off All Orders!</h2>
+        <p>Order now and get a 20% discount on all products. Limited time offer, hurry!</p>
+        <a href="menu.html" class="btn">Shop Now</a>
+    </div>
+    <div class="announcement">
+        <h3>Upcoming Event: Bakery Workshop</h3>
+        <p>Join us for a fun-filled pastry-making workshop on January 15th, 2024. Reserve your spot today!</p>
+        <a href="#contact" class="btn">Register Now</a>
+    </div>
+</section>
+
+
+
+<!-- Store Location Section -->
+<section id="store-location" class="store-location">
+  <h2>Our Location</h2>
+  <p>Visit us at Tea Baa, located in the heart of Accra. Enjoy delightful treats in a cozy environment with the finest pastries.</p>
+  <div id="map" style="height: 400px; width: 100%;"></div> <!-- Google Map -->
+
+  <h3>Hours of Operation</h3>
+  <ul>
+      <li>Monday - Friday: 9:00 AM - 6:00 PM</li>
+      <li>Saturday: 10:00 AM - 4:00 PM</li>
+      <li>Sunday: Closed</li>
+  </ul>
+</section>
+<!-- About Section -->
+<section id="about" class="about">
+    <h2>About Us</h2>
+    <p>At Delightful Bites, we combine a passion for baking with the finest ingredients to craft exceptional pastries. Our treats are made with locally sourced butter, premium chocolate, and hand-picked fruits, ensuring every bite is a delightful experience. We aim to create moments of happiness through high-quality, handcrafted pastries, whether it's a sweet breakfast, a special cake, or an indulgent afternoon treat. Join us and experience the magic of freshly baked goodness.</p>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <form class="contact-form" action="mailto:email@example.com" method="post" enctype="text/plain">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit" class="btn">Send</button>
+    </form>
+</section>
+
+
+<!-- Footer Section -->
+<footer class="footer">
+    <p>&copy; 2024 Delightful Bites. All rights reserved.</p>
+    <div class="social-links">
+        <a href="https://www.instagram.com/">Instagram</a>
+        <a href="https://www.facebook.com/login.php/">Facebook</a>
+        <a href="https://x.com/?lang=en">Twitter</a>
+    </div>
+</footer>
+
+</body>
+</html>

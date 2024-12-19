@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+        .contact {
+  padding: 50px 20px;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+.contact-form input, .contact-form textarea {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.contact-form button {
+  align-self: flex-end;
+  background: #f08a5d;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contact-form button:hover {
+  background: #b83b5e;
+}
+   /* Add some styles for the map container */
+   #map {
+    height: 400px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* Style for store location section */
+.store-location h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #264653;
+    margin-bottom: 20px;
+}
+
+.store-location h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #e76f51;
+}
+
+.store-location ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.store-location ul li {
+    margin: 10px 0;
+}
+.header {
+  position: absolute; /* To overlay over the hero section */
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10; /* Ensures navbar is above the hero section */
+  background: rgba(255, 255, 255, 0.7); /* Semi-transparent background for navbar */
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  position: relative;
+  z-index: 1; /* Keep content above the background */
+}
+
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  max-width: 50px;
+}
+
+.brand-name {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
+  font-style: italic;
+  color: #333; /* Darker color for text for better readability */
+  margin-left: 10px;
+}
+
+.nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.nav ul li {
+  margin: 0 15px;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: #333; /* Dark text color */
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.nav ul li a:hover {
+  color: #e76f51; /* Same color as button hover */
+}
+h2 {
+  /* Add space between the header and the h2 */
+  margin-top: 30px; /* Adjust this value as needed */
+  font-size: 24px;
+  text-align: center;
+}
+    </style>
+    
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="logo-wrapper">
+                <img src="images/bite1.png" alt="Delightful Bites Logo" class="logo">
+                <span class="brand-name">Delightful Bites</span>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form class="contact-form" action="mailto:email@example.com" method="post" enctype="text/plain">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+    
+            <button type="submit" class="btn">Send</button>
+        </form>
+    </section>
+</body>
+</html>
